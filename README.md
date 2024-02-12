@@ -1,4 +1,4 @@
-![cover](https://github.com/rodrigofontesdev/polls/assets/17281370/a6e68a10-b918-4740-beca-d640e6e61416)
+![cover](https://github.com/rodrigofontesdev/polls/assets/17281370/3bacf1f7-1753-43cd-a689-7de06f9b4f0f)
 
 # Polls
 
@@ -32,7 +32,9 @@ Postman is an API platform for building and using APIs.
 - Auth: No Auth
 - BASE_URL: `http://localhost:3333`
 
-## HTTP
+## How to use
+
+### HTTP
 
 ### POST `/polls`
 
@@ -63,6 +65,10 @@ Create a new poll.
 ### GET `/polls/:pollId`
 
 Return data from a single poll.
+
+**Request body**
+
+`No request body`
 
 **Response body**
 
@@ -109,9 +115,15 @@ Add a vote to specific poll.
 }
 ```
 
-## WebSockets
+**Response body**
+
+`No response body`
+
+### WebSockets
 
 ### ws `/polls/:pollId/results`
+
+**Message**
 
 ```json
 {

@@ -34,7 +34,7 @@ Postman is an API platform for building and using APIs.
 
 ## HTTP
 
-## POST `/polls`
+### POST `/polls`
 
 Create a new poll.
 
@@ -60,7 +60,7 @@ Create a new poll.
 }
 ```
 
-## GET `/polls/:pollId`
+### GET `/polls/:pollId`
 
 Return data from a single poll.
 
@@ -97,7 +97,7 @@ Return data from a single poll.
 }
 ```
 
-## POST `/polls/:pollId/votes`
+### POST `/polls/:pollId/votes`
 
 Add a vote to specific poll.
 
@@ -111,7 +111,7 @@ Add a vote to specific poll.
 
 ## WebSockets
 
-## ws `/polls/:pollId/results`
+### ws `/polls/:pollId/results`
 
 ```json
 {

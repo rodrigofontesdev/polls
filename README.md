@@ -16,18 +16,9 @@ A real-time voting system where users can create a poll and other users can cast
 - Install dependencies (`npm install`)
 - Setup PostgreSQL and Redis (`docker compose up -d`)
 - Check if PostgreSQL and Redis containers is running (`docker ps`)
-
-![docker-ps](https://github.com/rodrigofontesdev/polls/assets/17281370/c079e484-e939-42f1-8de0-62d4f4616647)
-
 - Copy .env.example file (`cp .env.example .env`)
 - Install database migrations (`npx prisma migrate dev`)
-
-![run-migrations](https://github.com/rodrigofontesdev/polls/assets/17281370/ca23c2bd-7b99-4e89-a716-0c5aba853398)
-
 - Run application (`npm run dev`)
-
-![run-application](https://github.com/rodrigofontesdev/polls/assets/17281370/98b24adc-d1f2-410a-9b00-be268b6bdcb0)
-
 - Test it! (I personally recommend testing with [Hoppscotch](https://hoppscotch.io))
 
 ## Prisma Studio
@@ -55,8 +46,6 @@ Hoppscotch is an open-source API development ecosystem that helps you create and
 
 Create a new poll.
 
-![create-poll](https://github.com/rodrigofontesdev/polls/assets/17281370/e29de468-f44b-4c56-a7c0-c9e07e32f9ff)
-
 **Request body**
 
 ```json
@@ -82,8 +71,6 @@ Create a new poll.
 ### GET `/polls/:pollId`
 
 Return data from a single poll.
-
-![get-poll](https://github.com/rodrigofontesdev/polls/assets/17281370/b59535f5-f343-4b68-bd14-943cac39ff78)
 
 **Request body**
 
@@ -126,8 +113,6 @@ Return data from a single poll.
 
 Add a vote to specific poll.
 
-![vote-on-poll](https://github.com/rodrigofontesdev/polls/assets/17281370/f3d4db47-99ae-4b6b-9482-a86306afe796)
-
 **Request body**
 
 ```json
@@ -145,8 +130,6 @@ Add a vote to specific poll.
 ### ws `/polls/:pollId/results`
 
 Return votes in realtime on a specific poll.
-
-![update-votes-in-real-time](https://github.com/rodrigofontesdev/polls/assets/17281370/8d3c4de8-31ef-41de-a6f2-5883a0a28bc3)
 
 **Response body**
 

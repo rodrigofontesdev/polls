@@ -1,4 +1,4 @@
-![cover](https://github.com/rodrigofontesdev/polls/assets/17281370/3bacf1f7-1753-43cd-a689-7de06f9b4f0f)
+![cover](https://github.com/rodrigofontesdev/polls/assets/17281370/19108157-7049-4fde-aba1-1dce097321f8)
 
 # Polls
 
